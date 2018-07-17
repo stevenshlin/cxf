@@ -27,7 +27,7 @@
     <parent>
         <groupId>org.apache.cxf</groupId>
         <artifactId>cxf-parent</artifactId>
-        <version>3.0.17-SNAPSHOT</version>
+        <version>3.0.16</version>
         <relativePath>../../../parent/pom.xml</relativePath>
     </parent>
     <properties>
@@ -193,25 +193,25 @@
                     </instructions>
                 </configuration>
             </plugin>
-            <plugin>
-                <groupId>com.googlecode.maven-download-plugin</groupId>
-                <artifactId>download-maven-plugin</artifactId>
-                <version>1.2.0</version>
-                <executions>
-                    <execution>
-                        <id>download-public-suffix-list</id>
-                        <phase>generate-sources</phase>
-                        <goals>
-                            <goal>wget</goal>
-                        </goals>
-                        <configuration>
-                            <url>https://publicsuffix.org/list/effective_tld_names.dat</url>
-                            <outputDirectory>${project.build.outputDirectory}/mozilla</outputDirectory>
-                            <outputFileName>public-suffix-list.txt</outputFileName>
-                        </configuration>
-                    </execution>
-                </executions>
-             </plugin>
+            <!--<plugin>-->
+                <!--<groupId>com.googlecode.maven-download-plugin</groupId>-->
+                <!--<artifactId>download-maven-plugin</artifactId>-->
+                <!--<version>1.2.0</version>-->
+                <!--<executions>-->
+                    <!--<execution>-->
+                        <!--<id>download-public-suffix-list</id>-->
+                        <!--<phase>generate-sources</phase>-->
+                        <!--<goals>-->
+                            <!--<goal>wget</goal>-->
+                        <!--</goals>-->
+                        <!--<configuration>-->
+                            <!--<url>https://publicsuffix.org/list/effective_tld_names.dat</url>-->
+                            <!--<outputDirectory>${project.build.outputDirectory}/mozilla</outputDirectory>-->
+                            <!--<outputFileName>public-suffix-list.txt</outputFileName>-->
+                        <!--</configuration>-->
+                    <!--</execution>-->
+                <!--</executions>-->
+             <!--</plugin>-->
         </plugins>
     </build>
 </project>

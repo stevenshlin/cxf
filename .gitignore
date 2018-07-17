@@ -15,3 +15,4 @@ target/
 velocity.log
 bin/
 node_modules/
+pom.xml.versionsBackup
